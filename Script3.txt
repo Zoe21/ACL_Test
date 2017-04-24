@@ -9,5 +9,10 @@ EXTRACT FIELDS ALL TO Active_Employees
 
 OPEN Active_Employees
 
+comment 
+testing fix
+end
+
+CLOSE Active_Employees
 
 SET SAFETY ON
