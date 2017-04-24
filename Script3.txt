@@ -1,0 +1,13 @@
+SET SAFETY OFF
+
+DELETE FORMAT Active_Employees OK
+DELETE "Active_Employees.fil" OK
+
+OPEN EMPLOYEES
+SET FILTER TO Status = "A"
+EXTRACT FIELDS ALL TO Active_Employees
+
+OPEN Active_Employees
+
+
+SET SAFETY ON
